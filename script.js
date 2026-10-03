@@ -1,11 +1,10 @@
-document.getElementById("year").textContent = new Date().getFullYear();
+const year = document.getElementById("year");
+if (year) year.textContent = new Date().getFullYear();
 
 const header = document.querySelector(".site-header");
 
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 24) {
-    header.style.borderColor = "rgba(255,145,76,.18)";
-  } else {
-    header.style.borderColor = "rgba(255,255,255,.08)";
-  }
-}, { passive: true });
+if (header) {
+  window.addEventListener("scroll", () => {
+    header.style.borderColor = window.scrollY > 24 ? "rgba(255,102,0,.22)" : "rgba(255,255,255,.08)";
+  }, { passive: true });
+}
