@@ -1,11 +1,322 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>myRandevu</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b0b0c" />
+  <meta name="description" content="myRandevu — Berber, kuaför ve kişisel bakım randevularını kolaylaştıran modern randevu deneyimi." />
+  <title>myRandevu — Bakım randevuların artık daha kolay</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>myRandevu sitesi çalışıyor 🎉</h1>
+  <div class="noise"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="myRandevu ana sayfa">
+      <span class="brand-mark" aria-hidden="true">
+        <span class="r-letter">R</span>
+        <span class="clock-hand hand-a"></span>
+        <span class="clock-hand hand-b"></span>
+      </span>
+      <span class="brand-text"><b>my</b>Randevu</span>
+    </a>
+
+    <nav class="nav-links" aria-label="Ana navigasyon">
+      <a href="#nasil">Nasıl çalışır?</a>
+      <a href="#ozellikler">Özellikler</a>
+      <a href="#isletmeler">İşletmeler</a>
+    </nav>
+
+    <a class="nav-cta" href="#bekleme-listesi">Yakında</a>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-copy">
+        <div class="pill"><span></span> Berber • Kuaför • Bakım</div>
+
+        <h1>
+          Randevu almak<br />
+          <span>bu kadar kolay</span><br />
+          olmamıştı.
+        </h1>
+
+        <p class="hero-lead">
+          İhtiyacın olan bakım hizmetini keşfet, uygun saati seç ve randevunu
+          saniyeler içinde oluştur. Telefon trafiği yok, unutulan saatler yok.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button primary" href="#nasil">Nasıl çalışıyor?</a>
+          <a class="button ghost" href="#isletmeler">İşletmemi eklemek istiyorum</a>
+        </div>
+
+        <div class="trust-row">
+          <div>
+            <strong>Hızlı</strong>
+            <span>randevu akışı</span>
+          </div>
+          <div>
+            <strong>Kolay</strong>
+            <span>işletme yönetimi</span>
+          </div>
+          <div>
+            <strong>Modern</strong>
+            <span>mobil deneyim</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="myRandevu uygulama arayüzü önizlemesi">
+        <div class="orange-glow"></div>
+        <div class="phone phone-main">
+          <div class="phone-top">
+            <span>9:41</span>
+            <div class="dynamic-island"></div>
+            <span>●●●</span>
+          </div>
+
+          <div class="app-screen">
+            <div class="app-greeting">
+              <div>
+                <small>İyi akşamlar 👋</small>
+                <h3>Bugün biraz<br />tazelenmeye ne dersin?</h3>
+              </div>
+              <div class="avatar">M</div>
+            </div>
+
+            <div class="search-box">
+              <span>⌕</span>
+              <p>Hizmet veya işletme ara</p>
+            </div>
+
+            <div class="categories">
+              <div class="category active"><span>✂</span>Berber</div>
+              <div class="category"><span>✦</span>Kuaför</div>
+              <div class="category"><span>♡</span>Bakım</div>
+            </div>
+
+            <div class="app-section-title">
+              <strong>Yakınındaki işletmeler</strong>
+              <span>Tümü</span>
+            </div>
+
+            <article class="salon-card">
+              <div class="salon-image">
+                <span>Öne çıkan</span>
+              </div>
+              <div class="salon-info">
+                <div>
+                  <h4>Studio No.10</h4>
+                  <p>Saç • Sakal • Bakım</p>
+                </div>
+                <b>4.9 ★</b>
+              </div>
+              <div class="slots">
+                <span>18:30</span><span>19:00</span><span>19:30</span>
+              </div>
+            </article>
+
+            <div class="bottom-nav">
+              <span class="active">⌂<small>Ana Sayfa</small></span>
+              <span>⌕<small>Keşfet</small></span>
+              <span>▣<small>Randevular</small></span>
+              <span>○<small>Profil</small></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="floating-card floating-one">
+          <span class="floating-icon">✓</span>
+          <div><b>Randevun hazır</b><small>Bugün • 19:30</small></div>
+        </div>
+
+        <div class="floating-card floating-two">
+          <span class="floating-icon">★</span>
+          <div><b>4.9 puan</b><small>Memnun müşteriler</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>BERBER</span><i>✦</i><span>KUAFÖR</span><i>✦</i><span>SAÇ</span><i>✦</i>
+        <span>SAKAL</span><i>✦</i><span>BAKIM</span><i>✦</i><span>TIRNAK</span><i>✦</i>
+        <span>BERBER</span><i>✦</i><span>KUAFÖR</span><i>✦</i><span>SAÇ</span><i>✦</i>
+        <span>SAKAL</span><i>✦</i><span>BAKIM</span><i>✦</i><span>TIRNAK</span><i>✦</i>
+      </div>
+    </section>
+
+    <section class="section split-section" id="nasil">
+      <div class="section-heading">
+        <p class="kicker">01 / KULLANICILAR İÇİN</p>
+        <h2>Aradığın hizmeti bul.<br /><span>Saati seç. Bitti.</span></h2>
+      </div>
+
+      <div class="steps">
+        <article class="step-card">
+          <span class="step-number">01</span>
+          <div class="step-icon">⌕</div>
+          <h3>Keşfet</h3>
+          <p>Yakınındaki berber, kuaför ve bakım işletmelerini tek ekranda gör.</p>
+        </article>
+        <article class="step-card featured">
+          <span class="step-number">02</span>
+          <div class="step-icon">◷</div>
+          <h3>Saatini seç</h3>
+          <p>İşletmenin müsait saatlerini anında gör, sana uygun zamanı seç.</p>
+        </article>
+        <article class="step-card">
+          <span class="step-number">03</span>
+          <div class="step-icon">✓</div>
+          <h3>Randevunu oluştur</h3>
+          <p>Randevun tek dokunuşla oluşsun, tüm planını uygulamadan takip et.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section features-section" id="ozellikler">
+      <div class="section-heading compact">
+        <p class="kicker">02 / DAHA AKILLI RANDEVU</p>
+        <h2>Randevu deneyiminin<br /><span>olması gerektiği gibi.</span></h2>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card large">
+          <div class="feature-copy">
+            <span class="mini-label">CANLI MÜSAİTLİK</span>
+            <h3>Boş saat aramakla uğraşma.</h3>
+            <p>Uygun zamanları gör, karşılıklı telefon trafiğini ortadan kaldır.</p>
+          </div>
+          <div class="calendar-ui">
+            <div class="calendar-head"><b>Ekim</b><span>‹ &nbsp; ›</span></div>
+            <div class="weekdays"><span>Pzt</span><span>Sal</span><span>Çar</span><span>Per</span><span>Cum</span></div>
+            <div class="days"><span>5</span><span>6</span><span class="selected">7</span><span>8</span><span>9</span></div>
+            <div class="time-list"><span>17:30</span><span class="selected-time">18:00</span><span>18:30</span></div>
+          </div>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-symbol">⌁</span>
+          <h3>Tek yerde takip</h3>
+          <p>Yaklaşan ve geçmiş randevularını düzenli biçimde görüntüle.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-symbol">♡</span>
+          <h3>Favorilerin yanında</h3>
+          <p>Sevdiğin işletmelere tekrar ulaşmak için yeniden arama yapma.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-symbol">◎</span>
+          <h3>Sana yakın seçenekler</h3>
+          <p>Çevrendeki hizmetleri keşfet, sana en uygun seçeneği değerlendir.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-symbol">✦</span>
+          <h3>Sade ve hızlı</h3>
+          <p>Gereksiz adımlar olmadan randevuya odaklanan modern deneyim.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section business-section" id="isletmeler">
+      <div class="business-panel">
+        <div class="business-copy">
+          <p class="kicker">03 / İŞLETMELER İÇİN</p>
+          <h2>Takvimin dolsun.<br /><span>Telefonun değil.</span></h2>
+          <p>
+            Randevularını düzenle, müsaitliğini yönet ve müşterilerinin sana
+            ulaşmasını kolaylaştır. myRandevu işletmeler için günlük akışı
+            daha sade hale getirmek üzere tasarlanıyor.
+          </p>
+
+          <div class="business-points">
+            <span>✓ Randevu takvimi</span>
+            <span>✓ Hizmet & süre yönetimi</span>
+            <span>✓ Müşteri randevu geçmişi</span>
+            <span>✓ Çalışma saatleri</span>
+          </div>
+
+          <a class="button primary" href="#bekleme-listesi">İşletmem için ilgileniyorum</a>
+        </div>
+
+        <div class="dashboard-card">
+          <div class="dash-head">
+            <div><small>Bugün</small><h3>8 Randevu</h3></div>
+            <span>3 Ekim</span>
+          </div>
+          <div class="dash-stat-row">
+            <div><small>Doluluk</small><b>%82</b></div>
+            <div><small>Sıradaki</small><b>18:30</b></div>
+            <div><small>Boş slot</small><b>3</b></div>
+          </div>
+          <div class="timeline">
+            <div><time>17:30</time><span></span><p><b>Saç + Sakal</b><small>45 dk</small></p></div>
+            <div class="active"><time>18:30</time><span></span><p><b>Saç Kesimi</b><small>30 dk</small></p></div>
+            <div><time>19:15</time><span></span><p><b>Sakal Bakımı</b><small>20 dk</small></p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section coming-section" id="bekleme-listesi">
+      <div class="coming-inner">
+        <div class="app-logo-large">
+          <span class="brand-mark big" aria-hidden="true">
+            <span class="r-letter">R</span>
+            <span class="clock-hand hand-a"></span>
+            <span class="clock-hand hand-b"></span>
+          </span>
+        </div>
+
+        <p class="kicker">ÇOK YAKINDA</p>
+        <h2>Randevunun yeni hali<br /><span>cebinde.</span></h2>
+        <p>
+          myRandevu geliştirme aşamasında. Uygulama yayınlandığında
+          App Store ve Google Play bağlantıları burada yerini alacak.
+        </p>
+
+        <div class="store-buttons">
+          <button type="button" class="store-button" disabled>
+            <span>●</span>
+            <div><small>Yakında</small><b>App Store</b></div>
+          </button>
+          <button type="button" class="store-button" disabled>
+            <span>▶</span>
+            <div><small>Yakında</small><b>Google Play</b></div>
+          </button>
+        </div>
+
+        <small class="muted">Yayın bağlantıları hazır olduğunda bu alan güncellenecek.</small>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#top">
+      <span class="brand-mark" aria-hidden="true">
+        <span class="r-letter">R</span>
+        <span class="clock-hand hand-a"></span>
+        <span class="clock-hand hand-b"></span>
+      </span>
+      <span class="brand-text"><b>my</b>Randevu</span>
+    </a>
+
+    <p>Berber, kuaför ve bakım randevularını kolaylaştıran modern deneyim.</p>
+
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> myRandevu. Tüm hakları saklıdır.</span>
+      <div>
+        <a href="#top">Ana Sayfa</a>
+        <a href="#isletmeler">İşletmeler</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
